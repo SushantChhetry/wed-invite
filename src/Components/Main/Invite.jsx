@@ -5,20 +5,19 @@ import RSVP from "./RSVP";
 
 const Invite = () => {
   const titleStyle = {
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "green",
     display: " flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
+    padding: "10%",
   };
+
   return (
     <div>
       <div style={titleStyle}>
         <img src="https://picsum.photos/id/1015/250/150/" alt="invite" />
-        <h1> X WEDS Y</h1>
-        <button type="button">Click Me</button>
+        <h4>INVITE YOU TO CELEBRATE THEIR WEDDING!</h4>
+        <button type="button">RSVP</button>
       </div>
       <Gallery />
       <RSVP />

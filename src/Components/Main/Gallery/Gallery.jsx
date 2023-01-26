@@ -18,14 +18,33 @@ const images = [
 ];
 
 const Gallery = () => {
-  const containerStyle = { display: "flex" };
-  const storyBlock = { flex: 1, justifyContent: "center", padding: "10%" };
-  const storyStyle = { float: "left" };
+  const containerStyle = { display: "flex", flexDirection: "column" };
+  const storyBlock = {
+    flex: 3,
+    justifyContent: "center",
+    alignItem: "center",
+    padding: "10%",
+    paddingBottom: "5%",
+  };
+  const imgBlock = {
+    flex: 1,
+    justifyContent: "center",
+    padding: "35%",
+    flexWidth: "20px",
+  };
+
+  
+
+  const headingStyle = {
+    alignItem: "center",
+  };
+
   return (
-    <div style={containerStyle}>
-      <div className="Story" style={storyBlock}>
-        <h1>Our Story</h1>
-        <p className="Story" style={storyStyle}>
+    <div>
+      <div style={containerStyle}>
+        <h1 style={headingStyle}>Our Story</h1>
+
+        <p className="Story" style={storyBlock}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -34,8 +53,9 @@ const Gallery = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum
         </p>
+
+        <ImageGallery items={images} style={imgBlock} />
       </div>
-      <ImageGallery items={images} style={storyStyle} />
     </div>
   );
 };
