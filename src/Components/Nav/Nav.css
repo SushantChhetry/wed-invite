@@ -1,7 +1,7 @@
 .btnContainerStyles{
     display: flex;
         flex-direction: row-reverse;
-        background-color: blue;
+        background-color: #23292E;
         padding: 15px;
         position: fixed;
         top:0;
@@ -14,7 +14,7 @@
 .btnStyles{
     flex:1;
         margin: 2px;
-        background: red;
+        background: #DDDED9;
 }
 
 .titleStyles{
@@ -23,7 +23,7 @@
 
 .btn {
     border: 0;
-    background: #1E88E5;
+    background: #DDDED9;
     color: white;
     font-family: system-ui, sans-serif;
     font-size: 1rem;
