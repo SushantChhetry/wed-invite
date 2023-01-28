@@ -6,6 +6,7 @@ import RSVP from "./RSVP";
 const Invite = () => {
   const titleStyle = {
     display: " flex",
+    marginTop: "100px",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",

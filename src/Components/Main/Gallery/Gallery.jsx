@@ -33,8 +33,6 @@ const Gallery = () => {
     flexWidth: "20px",
   };
 
-  
-
   const headingStyle = {
     alignItem: "center",
   };
@@ -54,7 +52,7 @@ const Gallery = () => {
           culpa qui officia deserunt mollit anim id est laborum
         </p>
 
-        <ImageGallery items={images} style={imgBlock} />
+        <ImageGallery items={images} style={imgBlock} autoPlay={true} />
       </div>
     </div>
   );
