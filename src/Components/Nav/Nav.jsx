@@ -24,7 +24,7 @@ const Nav = () => {
           Details
         </button>
       </span>
-      <h2 className="titleStyles">X Weds Y</h2>
+      <h3 className="titleStyles">Matt & Katie</h3>
     </div>
   );
 };

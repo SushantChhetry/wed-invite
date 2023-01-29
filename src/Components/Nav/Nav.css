@@ -9,6 +9,7 @@
         z-index: 1;
         align-items: center;
         justify-content: center;
+        
 }
 
 .btnStyles{
@@ -19,12 +20,13 @@
 
 .titleStyles{
     flex: 5;
+        color: #DDDED9;
 }
 
 .btn {
     border: 0;
     background: #DDDED9;
-    color: white;
+    color: #23292E;
     font-family: system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.2;

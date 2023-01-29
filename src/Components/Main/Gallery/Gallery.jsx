@@ -1,6 +1,7 @@
 import React from "react";
 import "./Gallery.css";
 import ImageGallery from "react-image-gallery";
+import Story from "../Story/Story";
 
 const images = [
   {
@@ -18,18 +19,23 @@ const images = [
 ];
 
 const Gallery = () => {
-  const containerStyle = { display: "flex", flexDirection: "column" };
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "row",
+    height: "100vh",
+    background: "#DDDED9",
+    alignItem: "center",
+    justifyContent: "center",
+  };
   const storyBlock = {
     flex: 3,
     justifyContent: "center",
-    alignItem: "center",
-    padding: "10%",
-    paddingBottom: "5%",
+
+    padding: "2%",
   };
   const imgBlock = {
     flex: 1,
     justifyContent: "center",
-    padding: "35%",
     flexWidth: "20px",
   };
 
@@ -40,19 +46,10 @@ const Gallery = () => {
   return (
     <div>
       <div style={containerStyle}>
-        <h1 style={headingStyle}>Our Story</h1>
-
-        <p className="Story" style={storyBlock}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
-
         <ImageGallery items={images} style={imgBlock} autoPlay={true} />
+        <span style={storyBlock}>
+          <Story />
+        </span>
       </div>
     </div>
   );

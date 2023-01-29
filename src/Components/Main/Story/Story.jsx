@@ -1,12 +1,10 @@
 import React from "react";
 
 const Story = () => {
-  const storyBlock = { justifyContent: "center", padding: "10%" };
-  const storyStyle = {};
   return (
-    <div className="Story" style={storyBlock}>
-      <h1>Our Story</h1>
-      <p className="Story" style={storyStyle}>
+    <div className="Story">
+      <h2 className="storyTitle">Our Story</h2>
+      <p className="storyPara">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
